@@ -1,0 +1,71 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,800,900&display=swap");
+$textFont: "Raleway", sans-serif;
+$textHeadings: "Raleway", sans-serif;
+$fontSize: 16px;
+
+/* COLORS */
+$red: #6d2e46; /* rgb(109, 46, 70) */
+$orange: #a26769; /* rgb(162, 103, 105) */
+$vanila: #d5b9b2; /* rgb(213, 185, 178) */
+$body: #ece2d0; /* rgb(236, 226, 208) */
+$white: #fff;
+$text: #333;
+
+/* EFFECTS */
+$transition: 0.4s ease;
+$boxShadow: 0 5px 10px 0px rgba($text, 0.5);
+
+/* INITIAL VALUE */
+$py: 70px 0;
+$widthContainer: 80%;
+$lineHeight: 1.7;
+
+/* RESET STYLE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASIC STYLE */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $textFont;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $textHeadings;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color $transition;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.container {
+  width: $widthContainer;
+  margin: 0 auto;
+  @media (max-width: 767px) {
+    width: 90%;
+  }
+}
+.py {
+  padding: $py;
+}

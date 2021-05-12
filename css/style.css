@@ -1,0 +1,70 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,800,900&display=swap");
+/* COLORS */
+/* rgb(109, 46, 70) */
+/* rgb(162, 103, 105) */
+/* rgb(213, 185, 178) */
+/* rgb(236, 226, 208) */
+/* EFFECTS */
+/* INITIAL VALUE */
+/* RESET STYLE */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* BASIC STYLE */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.py {
+  padding: 70px 0;
+}
+
+/*------- GLOBAL -------*/
+/*# sourceMappingURL=style.css.map */
