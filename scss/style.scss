@@ -1,3 +1,126 @@
 @import "starter";
 @import "mixins";
 /*------- GLOBAL -------*/
+body {
+  background-color: $body;
+}
+button {
+  @include btn($red, transparent, $white, $red, transparent, $white);
+}
+h2 {
+  font-size: 3rem;
+  & + p {
+    font-size: 1.3rem;
+    font-weight: 900;
+  }
+}
+/*------- header -------*/
+header {
+  @include flex(flex-start, center, column);
+  background-image: linear-gradient(rgba($orange, 0.9), rgba($body, 0.99)),
+    url(../img/header.jpg);
+  @include bgBasic;
+  height: 100vh;
+  padding-top: 100px;
+  article {
+    text-align: center;
+    i {
+      font-size: 5rem;
+      color: $red;
+    }
+    h1 {
+      font-size: 4rem;
+      color: $white;
+      font-weight: 300;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+    h3 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/*------- services -------*/
+.services {
+  text-align: center;
+  article {
+    @include flex(space-between, center);
+    margin-bottom: 30px;
+  }
+  .wrepper {
+    flex: 0 0 22%;
+    color: $textFont;
+    h3 {
+      font-size: 2rem;
+    }
+    i {
+      font-size: 5rem;
+      margin: 30px 0;
+      color: $red;
+    }
+  }
+}
+
+/*------- books -------*/
+.books {
+  @include flex(space-between, center, column);
+  min-height: 100vh;
+  background-color: $orange;
+  text-align: center;
+  color: $white;
+
+  article {
+    @include flex(space-between, center);
+    flex: 1;
+    margin: 60px 0 30px;
+    .wrepper {
+      flex: 0 0 48%;
+      img {
+        //height: 100%;
+        object-fit: cover;
+      }
+      div {
+        margin-top: 30px;
+      }
+      p {
+        text-align: justify;
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+/*------- blog -------*/
+.blog {
+  @extend .services;
+  h2,
+  h2 + p {
+    color: $text;
+  }
+  article {
+    margin-top: 60px;
+  }
+  .wrepper {
+    flex: 0 0 31%;
+    div {
+      margin: 40px 0 30px;
+    }
+  }
+}
+
+/*------- footer -------*/
+footer {
+  background-color: $red;
+  text-align: center;
+  color: $white;
+  font-weight: 900;
+  a {
+    text-decoration: underline;
+    letter-spacing: 1px;
+  }
+}
+/*------- GLOBAL -------*/
+/*------- GLOBAL -------*/

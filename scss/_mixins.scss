@@ -22,11 +22,13 @@
   $txtHover
 ) {
   /* style*/
-  padding: 20px 40px;
+  padding: 0.8em 40px;
   background: $bgColor;
   border: 3px solid $borderColor;
   color: $txtColor;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
   text-transform: uppercase;
   font-family: $textFont;
   cursor: pointer;
@@ -38,6 +40,7 @@
     background-color: $bgHover;
     border: 3px solid $borderHover;
     color: $txtHover;
+    opacity: 0.8;
   }
 }
 
